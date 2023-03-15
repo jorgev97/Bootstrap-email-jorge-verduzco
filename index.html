@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--external css file-->
+     <link rel="stylesheet" href="style.css">
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+       <!--FontAwesome-->
+       <script src="https://kit.fontawesome.com/fe5ad56647.js" crossorigin="anonymous"></script>
+   
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Nav Bar-->
+    <div class="container-fluid bg-danger">
+      <div class="row w-100">
+        <nav class="navbar">
+          <!--user icon-->
+          <i class="fa-solid fa-user fa-2xl" id="fa-user"></i>
+          <div class="container-fluid">
+            <!--navbar text-->
+            <span class="navbar-brand mb-0 " id="navbar-text">Hello George! Welcome back.</span>
+          </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search.." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </nav>
+
+       </div>
+     <div class="row 100 vh-100">
+      <!--First Column-->
+    <div class="col-sm-12 col-md-5 col-lg-4 first-col">
+      <button type="button" class="btn btn-info d-flex" id="compose"  >Compose</button>
+       <ul class="list-group">
+        <li class="list-group-item">Inbox(3)</li>
+        <li class="list-group-item">Drafts(22)</li>
+        <li class="list-group-item">Spam(3)</li>
+        <li class="list-group-item">Sent</li>
+        <li class="list-group-item">Archive(10)</li>
+        <li class="list-group-item">Favorites(69)</li>
+      </ul>
+    </div>
+    <!--Second Column-->
+    <div class="col-sm-12 col-md-7 col-lg-3 second-col d-flex flex-column align-items-center">
+      <!--email messages-->
+      <ul class="list-group list-group-flush">
+        
+        <li class="list-group-item active">Bay Valley tech
+          Congrats on being accepted to Bay Valley Tech!..</li>
+        <li class="list-group-item">Best Buy 
+          Check out our great deals and best offers...</li>
+        <li class="list-group-item">Indeed
+          New jobs hiring now. Walmart, Tesla, Mcdonalds and...</li>
+      </ul>
+      <!--Page navigation bar-->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-flex-start">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--Third column-->
+    <div class="col-sm-12 col-md-12 col-lg-5 third-col">
+      <!--email message info-->
+      <h3>Subject: NEW MESSAGE</h3>
+      <p>From: Bay Valley Tech</p>
+      <p>To:</p>
+      <p>Bay Valley Tech Congrats on being accepted to Bay Valley Tech! Below you will find a link to our website to accept the offer letter! Let us know if you have any questions , welcome to BVT! https://www.bayvalleytech.com/</p>
+     <div class="form-floating"><div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary" id="draft-button">Drafts</button>
+      <button type="button" class="btn btn-primary">Archive</button>
+      <button type="button" class="btn btn-primary" id="favorite-button">Favorites</button>
+    </div>
+      <textarea class="form-control" placeholder="" id="floatingTextarea2" style="height: 120px"></textarea>
+      </div>
+      <!--Reply Button-->
+      <button type="button" class="btn btn-success">Reply</button>
+     <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Cancel Message
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Cancel message?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Cancel message without saving? Message has not been saved and will be gone forever.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">No, let it live</button>
+        <button type="button" class="btn btn-danger">Yes DESTROY!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

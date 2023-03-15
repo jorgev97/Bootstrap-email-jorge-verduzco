@@ -1,0 +1,49 @@
+.first-col{
+    background-color:rgb(64, 60, 61);
+}
+.second-col {
+   background-color:rgb(34, 36, 34);
+}
+.third-col {
+    background-color: rgb(187, 168, 168);
+}
+.list-group-item:hover {
+    background-color:yellow
+
+}
+.list-group-item{
+    display: flex;
+    margin: 8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+#compose {
+    background-color: rgb(202, 235, 35);
+    margin:10px;
+    padding:10px;
+}
+#draft-button{
+    background-color:blueviolet
+}
+#favorite-button{
+    background-color: rgb(24, 182, 124);
+   
+}
+#fa-user{
+    
+    /* height:45px;
+    width:45px; */
+    color:aquamarine;}
+#navbar-text{
+    padding:15px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.list-group-flush{
+    background-color: rgb(56, 56, 57);
+}
+.bg-body-tertiary
+{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
